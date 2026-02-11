@@ -14,37 +14,72 @@ body {
   height: clamp(250px, 60vh, 500px);
   transform: skewY(-10deg);
   transform-origin: top left;
-} 
-
-.headshot-container {
-  position: absolute;
-  top: 30%; 
-  left: 5%; 
-  transform: translateY(-50%); /* Perfect vertical centering */
-  display: flex;
-  align-items: center;
-  max-width: 90%; /* Prevent overflow */
+  position: relative;
+  z-index: 1
 }
 
-@media (max-width: 768px) {
-  .headshot-container {
-    left: 5%; 
-  }
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -55vh;
+  z-index: 10;
+  position: relative;
+}
+
+.headshot-container {
+  display: flex;
+  align-items: center;
+}
+
+.headshot-wrapper {
+  position: relative;
 }
 
 .headshot {
   max-width: 400px;
   height: auto;
+  flex-shrink: 0;
+}
+
+.name-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-size: 20px;
 }
 
 .about-me {
   background: white;
-  width: 50%;
+  flex: 1;
+  max-width: 600px;
   height: auto;
   padding: 20px;
   margin-left: 0px;
+  box-shadow: 2px 5px 5px rgb(202, 200, 200)
+}
+
+.about-h1 {
+  margin: 20px 0px;
+}
+
+.about-p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: rgb(84, 83, 83);
 }
 
 .devicon-linkedin-plain {
   color: black;
 }
+
+.about-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  font-size: 20px;
+}
+
