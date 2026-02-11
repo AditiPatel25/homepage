@@ -7,3 +7,44 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+.top-diagonal {
+  background: rgb(33, 139, 177);
+  width: 100%;
+  height: clamp(250px, 60vh, 500px);
+  transform: skewY(-10deg);
+  transform-origin: top left;
+} 
+
+.headshot-container {
+  position: absolute;
+  top: 30%; 
+  left: 5%; 
+  transform: translateY(-50%); /* Perfect vertical centering */
+  display: flex;
+  align-items: center;
+  max-width: 90%; /* Prevent overflow */
+}
+
+@media (max-width: 768px) {
+  .headshot-container {
+    left: 5%; 
+  }
+}
+
+.headshot {
+  max-width: 400px;
+  height: auto;
+}
+
+.about-me {
+  background: white;
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  margin-left: 0px;
+}
+
+.devicon-linkedin-plain {
+  color: black;
+}
