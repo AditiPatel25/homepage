@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
 }
 
 .inter-regular {
@@ -31,8 +30,6 @@ body {
 .headshot-container,
 .middle-container {
   max-width: 1400px;
-  padding-left: 50px;
-  padding-right: 50px;
   margin: 0 auto;
 }
 
@@ -235,7 +232,7 @@ body {
   filter: brightness(0) invert(1);
 }
 
-/* iPhone */
+/* IPHONE */
 @media (max-width: 1024px) {
   .headshot-container,
   .middle-container {
@@ -297,7 +294,7 @@ body {
   }
 }
 
-/* Tablet */
+/* TABLET */
 @media (max-width: 1366px) {
   .headshot-container,
   .middle-container {
